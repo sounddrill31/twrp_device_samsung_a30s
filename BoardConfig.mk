@@ -52,7 +52,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive androidboot.hardware=exyn
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
-
+BOARD_RECOVERYIMAGE_PARTITION_SIZE = 48947200
 # mkbootimg arguments
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSF26A004RU
 
